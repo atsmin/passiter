@@ -19,5 +19,4 @@ def passiter(length=8, num_of_numbers=2, num_of_uppers=2, num_of_symbols=1):
 if __name__ == '__main__':
     p = passiter()
     for _ in range(10):
-        # print next(p)
         print(next(p))
