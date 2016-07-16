@@ -4,10 +4,10 @@ Usage:
 
 .. code-block:: python
 
+    import passiter
     p = passiter()
     for _ in range(10):
         print(next(p))
-
     # bA2x9m,P
     # b:vOj29N
     # sN%6gCh4
