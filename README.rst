@@ -6,7 +6,7 @@ Install
 =========================
 
 .. code-block:: shell
-    
+
     pip install passiter
 
 Usage
@@ -17,7 +17,7 @@ Usage
 .. code-block:: python
 
     from passiter import passiter
-    p = passiter()  
+    p = passiter()
     for _ in range(10):
         print(next(p))
     # bA2x9m,P
@@ -37,12 +37,7 @@ Usage
 .. code-block:: python
 
     from passiter import passiter
-    p = passiter(
-        length=16,
-        num_of_uppers=3,
-        num_of_numbers=3,
-        num_of_symbols=0
-    )  
+    p = passiter(length=16, uppers=3, numbers=3, symbols=0)
     for _ in range(10):
         print(next(p))
     # b8DxXreiajv4A0hs
