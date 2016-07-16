@@ -1,7 +1,9 @@
 Passiter: A simple password generator
 =======================
 Usage:
+
 .. code-block:: python
+
     p = passiter()
     for _ in range(10):
         print(next(p))
