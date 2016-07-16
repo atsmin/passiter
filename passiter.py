@@ -2,17 +2,17 @@ import random
 from string import ascii_lowercase, ascii_uppercase, printable
 
 
-def passiter(length=8, num_of_numbers=2, num_of_uppers=2, num_of_symbols=1):
-    numbers = list(map(str, range(0, 10)))
-    uppers = list(ascii_uppercase)
-    lowers = list(ascii_lowercase)
-    symbols = list(printable[62:94])  # !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
-    num_of_lowers = length - num_of_numbers - num_of_uppers - num_of_symbols
+def passiter(length=8, numbers=2, uppers=2, symbols=1):
+    n = list(map(str, range(0, 10)))
+    u = list(ascii_uppercase)
+    l = list(ascii_lowercase)
+    s = list(printable[62:94])  # !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+    lowers = length - numbers - uppers - symbols
     while True:
-        p = random.sample(numbers, num_of_numbers) + \
-            random.sample(uppers, num_of_uppers) + \
-            random.sample(lowers, num_of_lowers) + \
-            random.sample(symbols, num_of_symbols)
+        p = random.sample(n, numbers) + \
+            random.sample(u, uppers) + \
+            random.sample(l, lowers) + \
+            random.sample(s, symbols)
         random.shuffle(p)
         yield ''.join(p)
 
