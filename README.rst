@@ -12,7 +12,7 @@ Install
 Usage
 =========================
 
-- passwords are 8 characters containing 2 uppercases, 2 number and 1 symbol by default
+- passwords are 8 characters containing 2 uppercases, 2 numbers and 1 symbol by default
 
 .. code-block:: python
 
